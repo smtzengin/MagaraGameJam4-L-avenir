@@ -1,3 +1,4 @@
+using LavenirGamesMAGARAJAM4.Uis;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace LavenirGamesMAGARAJAM4.Managers
 
         public static GameManager Instance { get; private set; }
         public event System.Action<bool> OnSceneChanged;
+        public int buildIndex;
         private void Awake()
         {
             SingletonGameObject();
@@ -37,7 +39,7 @@ namespace LavenirGamesMAGARAJAM4.Managers
         private IEnumerator LoadSceneAsync(int levelIndex)
         {
             yield return new WaitForSeconds(delayLevelTime);
-            int buildIndex = SceneManager.GetActiveScene().buildIndex;
+            buildIndex = SceneManager.GetActiveScene().buildIndex;
 
             yield return SceneManager.UnloadSceneAsync(buildIndex);
 
@@ -66,5 +68,8 @@ namespace LavenirGamesMAGARAJAM4.Managers
             Debug.Log("Exitbutton triggered");
             Application.Quit();
         }
+
+       
+       
     }
 }

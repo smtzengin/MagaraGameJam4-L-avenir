@@ -2,6 +2,7 @@ using LavenirGamesMAGARAJAM4.Abstracts;
 using LavenirGamesMAGARAJAM4.Animations;
 using LavenirGamesMAGARAJAM4.Combats;
 using LavenirGamesMAGARAJAM4.Inputs;
+using LavenirGamesMAGARAJAM4.Managers;
 using LavenirGamesMAGARAJAM4.Movements;
 using System.Collections;
 using System.Collections.Generic;
@@ -53,6 +54,7 @@ namespace LavenirGamesMAGARAJAM4.Controllers
 
             _characterAnimation.MoveAnimation(_horizontal);
             _characterAnimation.JumpAnimation(!_onGround.IsOnGround && _jump.IsJump);
+
         }
 
         public void FixedUpdate()
@@ -69,7 +71,10 @@ namespace LavenirGamesMAGARAJAM4.Controllers
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            
+            if (collision.gameObject.tag == ("FinalCollider"))
+            {
+                GameManager.Instance.LoadScene(2);
+            }
         }
     }
 }

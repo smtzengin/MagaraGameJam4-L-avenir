@@ -19,7 +19,7 @@ namespace LavenirGamesMAGARAJAM4.Uis
         {
             GameManager.Instance.OnSceneChanged -= HandleSceneChanged;
         }
-        private void HandleSceneChanged(bool isActive)
+        public void HandleSceneChanged(bool isActive)
         {
             if (isActive == menuPanel.gameObject.activeSelf) return;
             menuPanel.gameObject.SetActive(isActive);

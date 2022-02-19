@@ -11,13 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SplashScene.unity
     guid: 4fed6df087bfe834cb8f2b5474bab3ca
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MenuGiris.unity
     guid: dc002e208425d0c4f9d6dd48f0adbd2b
+  - enabled: 1
+    path: Assets/Scenes/Level1Secim.unity
+    guid: 21a27a15385e81a4e87bcfb48418826d
   - enabled: 1
     path: Assets/Scenes/Level1FastSpeed.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Level1SlowSpeed.unity
     guid: 1973952c0f632364285759842adb8e96
+  - enabled: 1
+    path: Assets/Scenes/Level2Secim.unity
+    guid: d9f8df8b1ab14ed40b5c700e923d3bca
   m_configObjects: {}
