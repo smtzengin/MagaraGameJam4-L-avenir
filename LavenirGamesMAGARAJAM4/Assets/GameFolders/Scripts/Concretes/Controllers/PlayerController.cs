@@ -16,6 +16,8 @@ namespace LavenirGamesMAGARAJAM4.Controllers
         bool _isJump;
         float _horizontal;
         float _vertical;
+        
+       
 
         IPlayerInput _input;
         Mover _mover;
@@ -24,6 +26,8 @@ namespace LavenirGamesMAGARAJAM4.Controllers
         OnGround _onGround;
         Health _health;
         Damage _damage;
+        Crouch _crouch;
+
 
 
         public void Awake()
@@ -36,6 +40,9 @@ namespace LavenirGamesMAGARAJAM4.Controllers
             _health = GetComponent<Health>();
             _damage = GetComponent<Damage>();
             _input = new PcInput();
+            _crouch = GetComponent<Crouch>();
+
+
 
 
         }
@@ -50,6 +57,18 @@ namespace LavenirGamesMAGARAJAM4.Controllers
             {
                 _jump.JumpAction();
                 _isJump = true;
+            }
+
+
+            if (_crouch.isCrouch && Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A))
+            {
+                _characterAnimation.CrouchWalkingAnimation(true);
+
+            }
+            else
+            {
+                _characterAnimation.CrouchWalkingAnimation(false);
+
             }
 
             _characterAnimation.MoveAnimation(_horizontal);

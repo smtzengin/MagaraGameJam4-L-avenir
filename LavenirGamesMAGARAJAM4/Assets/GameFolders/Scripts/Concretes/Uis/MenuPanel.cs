@@ -18,28 +18,26 @@ namespace LavenirGamesMAGARAJAM4.Uis
         }
         public void RestartButtonClick()
         {
-            float buildIndex = SceneManager.GetActiveScene().buildIndex;
-            if (buildIndex %2 == 0)
+            if (GameObject.Find("DogrulukObjesi").gameObject.GetComponent<DogrulukKontrolcusu>().dogruSecim == true)
+            {
+                GameManager.Instance.LoadScene(-1);
+            }
+            else
             {
                 GameManager.Instance.LoadScene(-2);
             }
-            else if (buildIndex % 2 == 1)
-            {
-                
-                GameManager.Instance.LoadScene(-1);
-            }
-
         }
-        public void HighSpeedButtonClick()
+        public void FirstButtonClick()
         {
             GameManager.Instance.LoadScene(1);
         }
-        public void LowSpeedButtonClick()
+        public void SecondButtonClick()
         {
             GameManager.Instance.LoadScene(2);
         }
 
-        
+
+
 
 
     }

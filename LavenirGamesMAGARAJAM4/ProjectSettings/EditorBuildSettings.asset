@@ -23,10 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1SlowSpeed.unity
     guid: 1973952c0f632364285759842adb8e96
-  - enabled: 0
-    path: Assets/Scenes/Level2Secim.unity
-    guid: d9f8df8b1ab14ed40b5c700e923d3bca
   - enabled: 1
-    path: Assets/Scenes/Level2FastJump.unity
+    path: Assets/Scenes/Level2Secim.unity
     guid: 4ce12d8cc7522044aa0b36b2cd9b219f
+  - enabled: 1
+    path: Assets/Scenes/Level2Jump.unity
+    guid: 5e9962a7fa0633b4e9b422326b87787a
+  - enabled: 1
+    path: Assets/Scenes/Level2Crouch.unity
+    guid: 06b0a9639a5f8af49b9038654b286efe
   m_configObjects: {}

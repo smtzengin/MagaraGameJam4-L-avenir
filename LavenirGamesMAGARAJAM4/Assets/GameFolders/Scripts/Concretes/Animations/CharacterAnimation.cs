@@ -26,5 +26,17 @@ namespace LavenirGamesMAGARAJAM4.Animations
             if (isJump == _animator.GetBool("isJump")) return;
             _animator.SetBool("isJump", isJump);
         }
+
+        public void CrouchAnimation(bool isCrouch)
+        {
+            if (isCrouch == _animator.GetBool("isCrouch")) return;
+            _animator.SetBool("isCrouch", isCrouch);
+        }
+
+        public void CrouchWalkingAnimation(bool isCrouchWalking)
+        {
+            if (isCrouchWalking == _animator.GetBool("isCrouchWalking")) return;
+            _animator.SetBool("isCrouchWalking", isCrouchWalking);
+        }
     }
 }
