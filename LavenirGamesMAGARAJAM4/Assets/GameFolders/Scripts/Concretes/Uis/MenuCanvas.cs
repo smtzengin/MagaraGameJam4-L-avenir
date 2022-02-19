@@ -8,6 +8,7 @@ namespace LavenirGamesMAGARAJAM4.Uis
     public class MenuCanvas : MonoBehaviour
     {
         [SerializeField] MenuPanel menuPanel;
+        [SerializeField] GameObject grid;
 
         private void OnEnable()
         {
@@ -23,6 +24,9 @@ namespace LavenirGamesMAGARAJAM4.Uis
         {
             if (isActive == menuPanel.gameObject.activeSelf) return;
             menuPanel.gameObject.SetActive(isActive);
+
+            if (isActive == grid.gameObject.activeSelf) return;
+            grid.gameObject.SetActive(isActive);
         }
     }
 }
