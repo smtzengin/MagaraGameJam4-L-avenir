@@ -69,10 +69,7 @@ namespace LavenirGamesMAGARAJAM4.Controllers
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (!_health.IsDead)
-            {
-                _health.TakeHit(_damage);
-            }
+            
         }
     }
 }
