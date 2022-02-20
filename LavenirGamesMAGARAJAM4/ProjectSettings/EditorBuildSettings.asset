@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2Crouch.unity
     guid: 06b0a9639a5f8af49b9038654b286efe
+  - enabled: 1
+    path: Assets/Scenes/Level3Secim.unity
+    guid: 250c1ba07707e5b469c3d2342ca1c01c
+  - enabled: 1
+    path: Assets/Scenes/Level3SuperJump.unity
+    guid: a44fdece772e40b4f968000c0ea3e4cb
+  - enabled: 1
+    path: Assets/Scenes/Level3Crouch.unity
+    guid: 802697d189e86eb478bfb51457ae2843
   m_configObjects: {}

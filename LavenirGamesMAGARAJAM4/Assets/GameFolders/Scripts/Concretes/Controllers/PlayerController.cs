@@ -27,7 +27,7 @@ namespace LavenirGamesMAGARAJAM4.Controllers
         Health _health;
         Damage _damage;
         Crouch _crouch;
-
+        SuperJump _superJump;
 
 
         public void Awake()
@@ -58,6 +58,7 @@ namespace LavenirGamesMAGARAJAM4.Controllers
                 _jump.JumpAction();
                 _isJump = true;
             }
+
 
 
             if (_crouch.isCrouch && Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A))
