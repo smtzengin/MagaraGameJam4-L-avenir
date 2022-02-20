@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Axe
   - FinalCollider
+  - Level3Axe
+  - FakeButton
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - Middleground
   - Foreground
   - Player
-  - 
+  - Axe
   - 
   - 
   - 

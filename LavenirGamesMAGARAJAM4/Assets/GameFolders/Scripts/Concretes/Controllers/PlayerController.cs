@@ -95,6 +95,10 @@ namespace LavenirGamesMAGARAJAM4.Controllers
             {
                 GameManager.Instance.LoadScene(2);
             }
+            //if (collision.gameObject.tag == ("Level3Axe"))
+            //{
+            //    GameManager.Instance.LoadScene(9);
+            //}
         }
     }
 }

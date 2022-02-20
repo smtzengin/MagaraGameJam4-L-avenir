@@ -36,9 +36,9 @@ namespace LavenirGamesMAGARAJAM4.Uis
             GameManager.Instance.LoadScene(2);
         }
 
-
-
-
-
+        public void FakeButtonClick()
+        {
+            GameManager.Instance.LoadScene(-3);
+        }
     }
 }
