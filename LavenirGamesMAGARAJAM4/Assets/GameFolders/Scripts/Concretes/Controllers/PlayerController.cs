@@ -99,6 +99,11 @@ namespace LavenirGamesMAGARAJAM4.Controllers
             //{
             //    GameManager.Instance.LoadScene(9);
             //}
+
+            if (collision.gameObject.tag == "DeadZone")
+            {
+                GameManager.Instance.LoadScene(0);
+            }
         }
     }
 }

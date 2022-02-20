@@ -219,9 +219,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 98799772508146753, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 98799772508147645, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
       propertyPath: jumpForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 98799772508147646, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
+      propertyPath: speed
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2269195758603134093, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
       propertyPath: m_RootOrder
@@ -271,7 +279,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7900441389211334989, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7900441389211334989, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
 --- !u!1 &195143720
 GameObject:
@@ -4936,6 +4949,39 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &226635609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7247409244745003082, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
+  m_PrefabInstance: {fileID: 65031665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &226635610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226635609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054d9d79ecd24744a949ae05ee086071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!70 &226635611
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226635609}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!4 &413402470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1491076908903301819, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
