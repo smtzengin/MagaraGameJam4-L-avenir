@@ -26,16 +26,20 @@ namespace LavenirGamesMAGARAJAM4.Movements
         public float fallMultiplier;
         public float lowJumpMultiplier;
 
+        AudioSource audioSource;
 
         //Gets Rigidbody component
         void Start()
         {
+            audioSource = GameObject.Find("Player").GetComponent<AudioSource>();
             rb = GetComponent<Rigidbody2D>();
         }
 
         //Moves player on x axis
         void FixedUpdate()
         {
+            
+
 
         }
 
@@ -65,6 +69,8 @@ namespace LavenirGamesMAGARAJAM4.Movements
                 isJumping = true;
                 jumpTimeCounter = jumpTime;
                 rb.velocity = Vector2.up * jumpForce;
+                audioSource.PlayOneShot(audioSource.clip, 0.5f);
+
             }
 
             //makes you jump higher when you hold down space

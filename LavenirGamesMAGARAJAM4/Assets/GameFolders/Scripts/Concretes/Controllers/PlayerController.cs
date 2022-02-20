@@ -27,7 +27,8 @@ namespace LavenirGamesMAGARAJAM4.Controllers
         Health _health;
         Damage _damage;
         Crouch _crouch;
-        SuperJump _superJump;
+        AudioSource audioSource;
+
 
 
         public void Awake()
@@ -41,6 +42,7 @@ namespace LavenirGamesMAGARAJAM4.Controllers
             _damage = GetComponent<Damage>();
             _input = new PcInput();
             _crouch = GetComponent<Crouch>();
+            audioSource = GetComponent<AudioSource>();
 
 
 
@@ -57,6 +59,7 @@ namespace LavenirGamesMAGARAJAM4.Controllers
             {
                 _jump.JumpAction();
                 _isJump = true;
+                audioSource.PlayOneShot(audioSource.clip, 0.5f);
             }
 
 

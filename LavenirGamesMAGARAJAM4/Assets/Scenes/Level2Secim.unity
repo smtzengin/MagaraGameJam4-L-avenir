@@ -3260,7 +3260,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
@@ -3383,9 +3383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CROUCH
-
-    (PRESS "C")'
+  m_text: egilme (c)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b61568cb93ca242a90acf3852d7e3f, type: 2}
   m_sharedMaterial: {fileID: 8389376735365589398, guid: 70b61568cb93ca242a90acf3852d7e3f, type: 2}
@@ -3519,9 +3517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'JUMP
-
-'
+  m_text: ziplama( )
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b61568cb93ca242a90acf3852d7e3f, type: 2}
   m_sharedMaterial: {fileID: 8389376735365589398, guid: 70b61568cb93ca242a90acf3852d7e3f, type: 2}

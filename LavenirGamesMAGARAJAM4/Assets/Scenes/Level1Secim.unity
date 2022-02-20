@@ -8804,7 +8804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LOW SPEED
+  m_text: yurume
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b61568cb93ca242a90acf3852d7e3f, type: 2}
   m_sharedMaterial: {fileID: 8389376735365589398, guid: 70b61568cb93ca242a90acf3852d7e3f, type: 2}
@@ -14075,9 +14075,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'HIGH SPEED
-
-'
+  m_text: kosma
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b61568cb93ca242a90acf3852d7e3f, type: 2}
   m_sharedMaterial: {fileID: 8389376735365589398, guid: 70b61568cb93ca242a90acf3852d7e3f, type: 2}

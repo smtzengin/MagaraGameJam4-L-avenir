@@ -606,7 +606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ULTRA SUPER POWER
+  m_text: ultra super guc
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b61568cb93ca242a90acf3852d7e3f, type: 2}
   m_sharedMaterial: {fileID: 8389376735365589398, guid: 70b61568cb93ca242a90acf3852d7e3f, type: 2}
@@ -9144,7 +9144,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SUPER JUMP & CROUCH
+  m_text: 'super ziplama(     ) & egilme(c)
 
 '
   m_isRightToLeft: 0
@@ -9280,7 +9280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SECIMINI YAP
+  m_text: "sec\u0131m\u0131n\u0131 yap"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c8eab034a97265f46a1cb9f073ab70ee, type: 2}
   m_sharedMaterial: {fileID: 3859200657251254932, guid: c8eab034a97265f46a1cb9f073ab70ee, type: 2}
