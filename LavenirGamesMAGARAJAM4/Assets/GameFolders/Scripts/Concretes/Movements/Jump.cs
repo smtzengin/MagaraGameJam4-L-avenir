@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace LavenirGamesMAGARAJAM4.Movements
 {
-    [RequireComponent(typeof(Rigidbody2D))]
+   //[RequireComponent(typeof(Rigidbody2D))]
     public class Jump : MonoBehaviour
     {
         [SerializeField] float jumpForce = 150f;

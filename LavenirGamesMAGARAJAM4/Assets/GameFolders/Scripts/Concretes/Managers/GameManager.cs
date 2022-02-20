@@ -69,7 +69,24 @@ namespace LavenirGamesMAGARAJAM4.Managers
             Application.Quit();
         }
 
-       
-       
+        public void LoadSuperUltraSplashScene(float delayLoadingTime)
+        {
+            StartCoroutine(LoadSuperUltraPowerSplashScene(delayLoadingTime));
+        }
+
+        private IEnumerator LoadSuperUltraPowerSplashScene(float delayLoadingTime)
+        {
+            yield return new WaitForSeconds(delayLoadingTime);
+            yield return SceneManager.LoadSceneAsync("Level2Secim");
+            yield return SceneManager.LoadSceneAsync("Ui", LoadSceneMode.Additive);
+            OnSceneChanged?.Invoke(false);
+
+
+
+        }
+
+
+
+
     }
 }

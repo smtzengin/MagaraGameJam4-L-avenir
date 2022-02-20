@@ -231,6 +231,10 @@ PrefabInstance:
       propertyPath: speed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 98799772508147647, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2269195758603134093, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -278,6 +282,10 @@ PrefabInstance:
     - target: {fileID: 7247409244745003082, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619555610683003928, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
+      propertyPath: jumpForce
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7900441389211334989, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
       propertyPath: m_Enabled
