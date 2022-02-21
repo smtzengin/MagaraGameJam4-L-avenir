@@ -1,6 +1,5 @@
 using LavenirGamesMAGARAJAM4.Abstracts;
 using LavenirGamesMAGARAJAM4.Animations;
-using LavenirGamesMAGARAJAM4.Combats;
 using LavenirGamesMAGARAJAM4.Inputs;
 using LavenirGamesMAGARAJAM4.Managers;
 using LavenirGamesMAGARAJAM4.Movements;
@@ -16,6 +15,7 @@ namespace LavenirGamesMAGARAJAM4.Controllers
         bool _isJump;
         float _horizontal;
         float _vertical;
+        bool IsTouch;
         
        
 
@@ -24,8 +24,6 @@ namespace LavenirGamesMAGARAJAM4.Controllers
         Flip _flip;
         Jump _jump;
         OnGround _onGround;
-        Health _health;
-        Damage _damage;
         Crouch _crouch;
         AudioSource audioSource;
 
@@ -38,8 +36,6 @@ namespace LavenirGamesMAGARAJAM4.Controllers
             _flip = GetComponent<Flip>();
             _jump = GetComponent<Jump>();
             _onGround = GetComponent<OnGround>();
-            _health = GetComponent<Health>();
-            _damage = GetComponent<Damage>();
             _input = new PcInput();
             _crouch = GetComponent<Crouch>();
             audioSource = GetComponent<AudioSource>();
@@ -51,7 +47,7 @@ namespace LavenirGamesMAGARAJAM4.Controllers
 
         public void Update()
         {
-            if (_health.IsDead) return;
+           
 
             _horizontal = _input.Horizontal;
             _vertical = _input.Vertical;
@@ -96,17 +92,26 @@ namespace LavenirGamesMAGARAJAM4.Controllers
         {
             if (collision.gameObject.tag == ("FinalCollider"))
             {
-                GameManager.Instance.LoadScene(2);
+                if (!IsTouch)
+                {
+                    GameManager.Instance.LoadScene(2);
+                    IsTouch = true;
+                    StartCoroutine(TouchDelay(5f));
+                }
+                
             }
-            //if (collision.gameObject.tag == ("Level3Axe"))
-            //{
-            //    GameManager.Instance.LoadScene(9);
-            //}
 
             if (collision.gameObject.tag == "DeadZone")
             {
                 GameManager.Instance.LoadScene(0);
             }
+        }
+
+        public IEnumerator TouchDelay(float delayClickTime)
+        {
+            yield return new WaitForSeconds(delayClickTime);
+            IsTouch = false;
+
         }
     }
 }

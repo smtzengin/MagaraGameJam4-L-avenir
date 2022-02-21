@@ -9,7 +9,6 @@ namespace LavenirGamesMAGARAJAM4.Movements
         private Rigidbody2D rb;
         public float speed;
         public float jumpForce;
-        private float moveInput;
 
         [Header("Layar Mask")]
         private bool isGrounded;
@@ -33,14 +32,6 @@ namespace LavenirGamesMAGARAJAM4.Movements
         {
             audioSource = GameObject.Find("Player").GetComponent<AudioSource>();
             rb = GetComponent<Rigidbody2D>();
-        }
-
-        //Moves player on x axis
-        void FixedUpdate()
-        {
-            
-
-
         }
 
         void Update()

@@ -12,8 +12,8 @@ namespace LavenirGamesMAGARAJAM4.Managers
         [SerializeField] float delayLevelTime = 1f;
 
         public static GameManager Instance { get; private set; }
-        public event System.Action<bool> OnSceneChanged;
         public int buildIndex;
+
         private void Awake()
         {
             SingletonGameObject();
@@ -47,7 +47,7 @@ namespace LavenirGamesMAGARAJAM4.Managers
             {
                 SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(buildIndex + levelIndex));
             };
-            OnSceneChanged?.Invoke(false);
+
         }
 
         public void LoadMenuAndUi(float delayLoadingTime)
@@ -60,7 +60,7 @@ namespace LavenirGamesMAGARAJAM4.Managers
             yield return new WaitForSeconds(delayLoadingTime);
             yield return SceneManager.LoadSceneAsync("MenuGiris");
             yield return SceneManager.LoadSceneAsync("Ui", LoadSceneMode.Additive);
-            OnSceneChanged?.Invoke(true);
+
         }
 
         public void ExitGame()
@@ -79,11 +79,9 @@ namespace LavenirGamesMAGARAJAM4.Managers
             yield return new WaitForSeconds(delayLoadingTime);
             yield return SceneManager.LoadSceneAsync("Level2Secim");
             yield return SceneManager.LoadSceneAsync("Ui", LoadSceneMode.Additive);
-            OnSceneChanged?.Invoke(false);
-
-
-
         }
+
+        
 
 
 

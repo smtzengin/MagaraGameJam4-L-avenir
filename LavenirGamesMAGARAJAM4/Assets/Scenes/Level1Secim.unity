@@ -343,6 +343,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e4fe5704d89393429e15eea90c0e8fb, type: 3}
+--- !u!1 &378169097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 378169099}
+  - component: {fileID: 378169098}
+  m_Layer: 0
+  m_Name: 'ButtonController '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &378169098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378169097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4704c20754e442b409515a3fb2363872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsClick: 0
+  menuPanel: {fileID: 0}
+--- !u!4 &378169099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378169097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &413402470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1491076908903301819, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
@@ -451,7 +496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.77919, y: -2.7994075, z: -10}
+  m_LocalPosition: {x: -8.030134, y: -13.89131, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9474,8 +9519,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6349563070627455448, guid: 2ef477e3bb3509043863e20a3963a90c, type: 3}
-        m_TargetAssemblyTypeName: LavenirGamesMAGARAJAM4.Uis.MenuPanel, Assembly-CSharp
+      - m_Target: {fileID: 378169098}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: FirstButtonClick
         m_Mode: 1
         m_Arguments:
@@ -14417,8 +14462,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6349563070627455448, guid: 2ef477e3bb3509043863e20a3963a90c, type: 3}
-        m_TargetAssemblyTypeName: LavenirGamesMAGARAJAM4.Uis.MenuPanel, Assembly-CSharp
+      - m_Target: {fileID: 378169098}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: SecondButtonClick
         m_Mode: 1
         m_Arguments:
