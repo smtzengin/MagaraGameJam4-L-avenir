@@ -14988,6 +14988,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -149
       objectReference: {fileID: 0}
+    - target: {fileID: 6349563070430351992, guid: 2ef477e3bb3509043863e20a3963a90c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 261312878}
+    - target: {fileID: 6349563070430351992, guid: 2ef477e3bb3509043863e20a3963a90c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349563070430351992, guid: 2ef477e3bb3509043863e20a3963a90c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ButtonController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6349563070430351993, guid: 2ef477e3bb3509043863e20a3963a90c, type: 3}
       propertyPath: m_Color.a
       value: 0

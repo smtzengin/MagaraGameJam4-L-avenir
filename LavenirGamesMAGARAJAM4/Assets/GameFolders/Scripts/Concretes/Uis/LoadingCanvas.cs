@@ -9,7 +9,7 @@ namespace LavenirGamesMAGARAJAM4.Uis
     {
         private void Start()
         {
-            GameManager.Instance.LoadMenuAndUi(3f);
+            //GameManager.Instance.LoadMenuAndUi(10f);
         }
     }
 }

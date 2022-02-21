@@ -150,7 +150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138388803}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.4, y: -0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2103374256}
@@ -503,7 +503,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Guzel gorunen sec\u0131mler her zaman dogru olmayab\u0131l\u0131r\n2.
-    leveldan devam ed\u0131yorsun :)"
+    level'a gerI GIDIYORSUN :)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1eb9f4e1860de5048af9b379ff842ddf, type: 2}
   m_sharedMaterial: {fileID: -2313074793444947916, guid: 1eb9f4e1860de5048af9b379ff842ddf, type: 2}
@@ -700,7 +700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &675307029
 Transform:
   m_ObjectHideFlags: 0
@@ -748,25 +748,7 @@ CompositeCollider2D:
   m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0.04
-  m_ColliderPaths:
-  - m_Collider: {fileID: 675307030}
-    m_ColliderPaths:
-    - - X: 1550000000
-        Y: 110000000
-      - X: -260000000
-        Y: 110000000
-      - X: -260000000
-        Y: -240000000
-      - X: 1550000000
-        Y: -240000000
-    - - X: -250000000
-        Y: -230000000
-      - X: -250000000
-        Y: 100000000
-      - X: 1540000000
-        Y: 100000000
-      - X: 1540000000
-        Y: -230000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 154.99997, y: -24}

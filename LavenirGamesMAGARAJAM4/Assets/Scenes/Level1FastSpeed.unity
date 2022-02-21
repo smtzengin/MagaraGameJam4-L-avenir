@@ -148,11 +148,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 11.0058155
+      value: 11.225815
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_Motor.m_MotorSpeed
-      value: 700
+      value: 675
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_AngleLimits.m_LowerAngle
@@ -464,11 +464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 11.0058155
+      value: 11.225815
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_Motor.m_MotorSpeed
-      value: 700
+      value: 675
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_AngleLimits.m_LowerAngle
@@ -3024,11 +3024,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 11.0058155
+      value: 11.225815
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_Motor.m_MotorSpeed
-      value: 700
+      value: 675
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_AngleLimits.m_LowerAngle
@@ -8904,11 +8904,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 11.145815
+      value: 11.225815
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_Motor.m_MotorSpeed
-      value: 700
+      value: 675
       objectReference: {fileID: 0}
     - target: {fileID: 1491076908903301818, guid: 42990a4dec6a9dc40a1aa05cb97403c7, type: 3}
       propertyPath: m_AngleLimits.m_LowerAngle

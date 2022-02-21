@@ -39,7 +39,9 @@ namespace LavenirGamesMAGARAJAM4.Managers
         private IEnumerator LoadSceneAsync(int levelIndex)
         {
             yield return new WaitForSeconds(delayLevelTime);
+            
             buildIndex = SceneManager.GetActiveScene().buildIndex;
+            
 
             yield return SceneManager.UnloadSceneAsync(buildIndex);
 
@@ -49,23 +51,23 @@ namespace LavenirGamesMAGARAJAM4.Managers
             };
 
         }
-
+        
         public void LoadMenuAndUi(float delayLoadingTime)
         {
             StartCoroutine(LoadMenuAndUiAsync(delayLoadingTime));
+
         }
 
         private IEnumerator LoadMenuAndUiAsync(float delayLoadingTime)
         {
             yield return new WaitForSeconds(delayLoadingTime);
-            yield return SceneManager.LoadSceneAsync("MenuGiris");
             yield return SceneManager.LoadSceneAsync("Ui", LoadSceneMode.Additive);
 
         }
 
         public void ExitGame()
         {
-            Debug.Log("Exitbutton triggered");
+            Debug.Log("Exit button triggered");
             Application.Quit();
         }
 
@@ -77,11 +79,17 @@ namespace LavenirGamesMAGARAJAM4.Managers
         private IEnumerator LoadSuperUltraPowerSplashScene(float delayLoadingTime)
         {
             yield return new WaitForSeconds(delayLoadingTime);
-            yield return SceneManager.LoadSceneAsync("Level2Secim");
-            yield return SceneManager.LoadSceneAsync("Ui", LoadSceneMode.Additive);
+            yield return SceneManager.UnloadSceneAsync(10);
+            yield return SceneManager.LoadSceneAsync("Level2Secim", LoadSceneMode.Additive);
+            
         }
 
-        
+        private void Update()
+        {
+            print(buildIndex);
+        }
+
+
 
 
 
